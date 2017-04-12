@@ -29,7 +29,24 @@ a{
 }
 
 a:hover, .active{
-  text-decoration: underline;
+}
+
+.active:before{
+	content: '▶';
+	position: absolute;
+	left: -1rem;
+	font-size: .8rem;
+	color: rgba(100,100,100,1);
+	line-height: 1.7rem;
+}
+
+.active:after{
+	content: '◀';
+	position: absolute;
+	margin-left: 2px;
+	font-size: .8rem;
+	color: rgba(100,100,100,1);
+	line-height: 1.7rem;
 }
 
 a:active, a:focus,input:active, input:focus{outline:0;}
@@ -243,7 +260,7 @@ section h2 span {
 	}
 
 	#sns a:hover img{
-		opacity: .8;
+		opacity: .4;
 	}
 	
 	/* sec03
