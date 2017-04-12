@@ -98,7 +98,7 @@ section h2 span {
 }
 
 
-/* SEC02 Gallery
+/* sec02
 ------------------------------------------------------------*/
 #sec02{
 	padding: 0 !important;
@@ -129,7 +129,7 @@ section h2 span {
 }
 
 
-/* SEC03 BRAND
+/* sec03
 ------------------------------------------------------------*/
 .col4 .img{
 	margin: 0 auto;
@@ -137,7 +137,7 @@ section h2 span {
 
 
 
-/* SEC04 PROJECT
+/* sec04
 ------------------------------------------------------------*/
 #sec04{
 	padding-bottom: 0 !important;
@@ -160,7 +160,7 @@ section h2 span {
 
 
 
-/* SEC05 COMPANY
+/* sec05
 ------------------------------------------------------------*/
 #sec05 p{
 	margin-bottom: 5px;
@@ -191,7 +191,7 @@ section h2 span {
 
 
 
-/* RESPONSIVE 設定
+/* レスポンシブ
 ------------------------------------------------------------*/
 
 @media only screen and (min-width: 800px){
@@ -246,7 +246,7 @@ section h2 span {
 		opacity: .8;
 	}
 	
-	/* SEC03 BRAND
+	/* sec03
 	-----------------*/
 	.col4{
 		text-align: center;
