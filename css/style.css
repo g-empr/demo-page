@@ -1,68 +1,136 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
 @import url(https://fonts.googleapis.com/css?family=Modern+Antiqua);
+@import url(https://fonts.googleapis.com/earlyaccess/nikukyu.css);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/5.0.0/sanitize.css);
 
 /* ユニークreset */
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
-address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;}
-ul{list-style:none;}
-table{border-collapse:collapse;border-spacing:0;}
-caption,th{text-align:left;}
-q:before,q:after{content:'';}
-object,embed{vertical-align:top;}
-legend{display:none;}
-h1,h2,h3,h4,h5,h6{font-size:100%;}
-img,abbr,acronym,fieldset{border:0;}
 
-body{
-	font: 14px/1.9 'Noto Sans JP', Arial, Verdana, 游ゴシック, YuGothic,'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', メイリオ, Meiryo,sans-serif;
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+	margin: 0;
+	padding: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+	font-style: normal;
+}
+
+ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+caption,
+th {
+	text-align: left;
+}
+
+q:before,
+q:after {
+	content: '';
+}
+
+object,
+embed {
+	vertical-align: top;
+}
+
+legend {
+	display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+}
+
+img,
+abbr,
+acronym,
+fieldset {
+	border: 0;
+}
+
+body {
+	font: 14px/1.9 'Noto Sans JP', Arial, Verdana, 游ゴシック, YuGothic, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', メイリオ, Meiryo, sans-serif;
 	font-weight: 300;
-	-webkit-text-size-adjust:100%;
+	-webkit-text-size-adjust: 100%;
 	overflow-x: hidden;
 	color: #000;
 	background: #fff;
 }
 
-a{
+a {
 	color: #0066ff;
 	text-decoration: none;
 }
 
-a:hover, .active{
+a:hover,
+.active {}
+
+.active {
+	font-weight: bold;
+	text-decoration: underline;
 }
 
-.active:before{
-	content: '▶';
-	position: absolute;
-	left: -1rem;
-	font-size: .8rem;
-	color: rgba(100,100,100,1);
-	line-height: 1.7rem;
+a:active,
+a:focus,
+input:active,
+input:focus {
+	outline: 0;
 }
-
-.active:after{
-	content: '◀';
-	position: absolute;
-	margin-left: 2px;
-	font-size: .8rem;
-	color: rgba(100,100,100,1);
-	line-height: 1.7rem;
-}
-
-a:active, a:focus,input:active, input:focus{outline:0;}
 
 
 /* ヘッダー
 ------------------------------------------------------------*/
-#mainnav a{
+
+#mainnav a {
 	color: #000;
-	font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+	font-family: 'Modern Antiqua', 'Noto Sans JP', serif;
 }
 
 
 /* フッター
 ------------------------------------------------------------*/
-#footer{
+
+#footer {
 	clear: both;
 	padding: 50px 10px 50px 0;
 	text-align: center;
@@ -72,24 +140,26 @@ a:active, a:focus,input:active, input:focus{outline:0;}
 
 /* 共通
 ------------------------------------------------------------*/
-h1, h2{
-	font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+
+h1,
+h2 {
+	font-family: 'Modern Antiqua', 'Noto Sans JP', serif;
 }
 
-img{
+img {
 	max-width: 100%;
 	height: auto;
 }
 
-section{
-  clear: both;
+section {
+	clear: both;
 }
 
-section h2{
+section h2 {
 	width: 60%;
 	margin: 70px auto;
 	font-size: 22px;
-	font-weight:normal;
+	font-weight: normal;
 	text-align: center;
 }
 
@@ -98,17 +168,18 @@ section h2 span {
 	border-bottom: 3px solid #000;
 }
 
-.inner{
+.inner {
 	width: 80%;
 	margin: 0 auto;
 	padding-bottom: 50px;
 }
 
-#sec03 .inner, #sec04 .inner{
+#sec03 .inner,
+#sec04 .inner {
 	border-bottom: 1px solid #a0a0a0;
 }
 
-.innerS{
+.innerS {
 	width: 60%;
 	margin: 0 auto;
 	padding-bottom: 80px;
@@ -117,79 +188,99 @@ section h2 span {
 
 /* sec02
 ------------------------------------------------------------*/
-#sec02{
+
+#sec02 {
 	padding: 0 !important;
 }
 
-#sec02 header{
+#sec02 header {
 	display: none;
 }
 
-#gallery{
+#gallery {
 	overflow: hidden;
 }
 
-#gallery li{
+#gallery li {
 	float: left;
 	width: calc(100%/3);
 	line-height: 0;
+	overflow: hidden;
 }
-#gallery li.full{
+
+#gallery li.full {
 	width: 100%;
 }
 
-
-#gallery img{
+#gallery img {
 	display: block;
 	width: 100%;
 	height: auto;
 }
 
+#gallery img:hover {
+	transform: scale(1.1);
+	transition: all .3s linear;
+}
+
 
 /* sec03
 ------------------------------------------------------------*/
-.col4 .img{
+
+.col4 .img {
 	margin: 0 auto;
 }
 
 
-
 /* sec04
 ------------------------------------------------------------*/
-#sec04{
+
+#sec04 {
 	padding-bottom: 0 !important;
 }
 
-.article{
+.article {
 	clear: both;
 	overflow: hidden;
 	padding-bottom: 50px;
 }
 
-.article img{
+.article:nth-child(1) img {
+	float: right;
+	margin: 5px 20px 20px;
+}
+
+.article:nth-child(2) img {
 	float: left;
 	margin: 5px 20px 20px;
 }
 
-.article p{
+.article p {
 	margin-bottom: 20px;
 }
 
 
-
 /* sec05
 ------------------------------------------------------------*/
-#sec05 p{
+
+#sec05 p {
 	margin-bottom: 5px;
+	font-size: 1rem;
 }
 
-.col2 li{
+#sec05 p a {
+	text-decoration: underline;
+	font-size: 1.1rem;
+	color: #7a344a;
+}
+
+.col2 li {
 	display: inline-block;
 	width: 100%;
-  margin: 20px 0;
+	margin: 20px 0;
 }
 
-#map{
+#map {
 	position: relative;
 	padding-bottom: 75%;
 	height: 0;
@@ -197,7 +288,7 @@ section h2 span {
 	z-index: 0;
 }
 
-#map iframe{
+#map iframe {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -207,201 +298,182 @@ section h2 span {
 }
 
 
-
 /* レスポンシブ
 ------------------------------------------------------------*/
 
-@media only screen and (min-width: 800px){
-	body{
-		font-size:14px;
+@media only screen and (min-width: 800px) {
+	body {
+		font-size: 14px;
 	}
-	
-	#wrapper{
+	#wrapper {
 		width: 100%;
 	}
-	
-	#content{
+	#content {
 		width: 80%;
 		margin-left: 20%;
 	}
-	
-	#sidebar{
+	#sidebar {
 		width: 12%;
 		position: fixed;
 		top: 0;
 		left: 4%;
 		background: #fff;
 	}
-	
-  a#menu{
-		display:none;
-	}	
-
-	.panel{
-		display:block !important;
+	a#menu {
+		display: none;
 	}
-	
-	#sidebar h1{
-		padding: 30px 0;
+	.panel {
+		display: block !important;
 	}
-
-	#mainnav li{
+	#sidebar h1 {
+		line-height: initial;
+		font-family: "Nikukyu";
+		padding: 30px 0 30px;
+		font-size: 25px;
+	}
+	#mainnav li {
 		font-size: 14px;
 		padding: 10px 0;
 	}
-	
-	#sns{
+	#sns {
 		margin-top: 50px;
 	}
-	
-	#sns li{
+	#sns li {
 		display: inline-block;
 		padding-right: 10px;
 	}
-
-	#sns a:hover img{
+	#sns a:hover img {
 		opacity: .4;
 	}
-	
 	/* sec03
 	-----------------*/
-	.col4{
+	.col4 {
 		text-align: center;
 	}
-
-	.col4 li{
+	.col4 li {
 		display: inline-block;
 		width: 18%;
 		padding: 0 3%;
 		vertical-align: top;
 		text-align: left;
 	}
-	
-	#map iframe{
-		height: 200px !important;
-  }
-	
-  #footer{
+	#map iframe {
+		height: 300px !important;
+	}
+	#footer {
 		padding: 30px 10px 70px 0;
 	}
 }
 
-
-@media only screen and (min-width: 641px){
-	.col2 li{
+@media only screen and (min-width: 641px) {
+	.col2 li {
 		width: 60%;
 		vertical-align: top;
 	}
-	.col2 li:first-child{
+	.col2 li:first-child {
 		width: 35%;
 		padding-right: 4%;
 	}
 }
 
-@media only screen and (max-width: 640px){
-	.innerS{
+@media only screen and (max-width: 640px) {
+	.innerS {
 		width: 94%;
 		padding-bottom: 30px;
 	}
-	#gallery li{
+	#gallery li {
 		float: none;
 		width: 100%;
 	}
-	.article img{
+	.article img {
 		float: none;
 		display: block;
 		margin: 0 auto 20px;
 	}
-	#map iframe{
+	#map iframe {
 		width: 96% !important;
 		left: 2%;
 	}
+	.article img {
+		margin: 20px auto !important;
+		width: 100%;
+	}
 }
 
-@media only screen and (max-width: 799px){
-	#sidebar{
+@media only screen and (max-width: 799px) {
+	#sidebar {
 		position: fixed;
 		width: 100%;
-		z-index:500;
+		z-index: 500;
 	}
-	
-	#sidebarWrap{
+	#sidebarWrap {
 		position: relative;
 		width: 100%;
 		height: 60px;
 		background: #fff;
 		border-bottom: 1px solid #ccc;
 	}
-	
-	#sidebar h1{
+	#sidebar h1 {
+		font-family: "Nikukyu";
+		font-size: 2rem;
 		text-align: center;
-		padding-top: 15px;
 	}
-	
-	#sidebar h1 img{
+	#sidebar h1 img {
 		width: auto !important;
 		max-height: 25px;
 	}
-	
-  a#menu{
-  	display: inline-block;
-  	position: relative;
-  	width: 40px;
-  	height: 40px;
-  	margin: 10px;
+	a#menu {
+		display: inline-block;
+		position: relative;
+		width: 40px;
+		height: 40px;
+		margin: 10px;
 	}
-
-	#menuBtn{
-  	display: block;
-  	position: absolute;
-  	top: 50%;
-  	left: 50%;
-  	width: 18px;
-  	height: 2px;
-  	margin: -1px 0 0 -7px;
-  	background: #000;
-  	transition: .2s;
+	#menuBtn {
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 18px;
+		height: 2px;
+		margin: -1px 0 0 -7px;
+		background: #000;
+		transition: .2s;
 	}
-
-	#menuBtn:before, #menuBtn:after{
-  	display: block;
-  	content: "";
-  	position: absolute;
-  	top: 50%;
-  	left: 0;
-  	width: 18px;
-  	height: 2px;
-  	background: #000;
-  	transition: .3s;
+	#menuBtn:before,
+	#menuBtn:after {
+		display: block;
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 18px;
+		height: 2px;
+		background: #000;
+		transition: .3s;
 	}
-
-	#menuBtn:before{
-  	margin-top: -7px;
+	#menuBtn:before {
+		margin-top: -7px;
 	}
-
-	#menuBtn:after{
-  	margin-top: 5px;
+	#menuBtn:after {
+		margin-top: 5px;
 	}
-
-	a#menu .close{
-  	background: transparent;
+	a#menu .close {
+		background: transparent;
 	}
-
-	a#menu .close:before, a#menu .close:after{
-  	margin-top: 0;
+	a#menu .close:before,
+	a#menu .close:after {
+		margin-top: 0;
 	}
-
-	a#menu .close:before{
-  	transform: rotate(-45deg);
-  	-webkit-transform: rotate(-45deg);
+	a#menu .close:before {
+		transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
 	}
-
-	a#menu .close:after{
-  	transform: rotate(-135deg);
-  	-webkit-transform: rotate(-135deg);
+	a#menu .close:after {
+		transform: rotate(-135deg);
+		-webkit-transform: rotate(-135deg);
 	}
-
-	.panel{
+	.panel {
 		width: 100%;
 		display: none;
 		overflow: hidden;
@@ -410,21 +482,18 @@ section h2 span {
 		top: -10px;
 		z-index: 100;
 	}
-
-	#mainnav{
+	#mainnav {
 		position: absolute;
 		top: 0;
 		width: 100%;
 		text-align: right;
 	}
-
-	#mainnav ul{
+	#mainnav ul {
 		border-bottom: 1px solid #ccc;
 		background: #fff;
 		text-align: left;
 	}
-
-	#mainnav li a{
+	#mainnav li a {
 		position: relative;
 		display: block;
 		padding: 15px 25px;
@@ -432,7 +501,7 @@ section h2 span {
 		color: #000;
 		font-weight: 400;
 	}
-	#mainnav li a:before{
+	#mainnav li a:before {
 		display: block;
 		content: "";
 		position: absolute;
@@ -446,24 +515,24 @@ section h2 span {
 		-webkit-transform: rotate(45deg);
 		transform: rotate(45deg);
 	}
-	#mainnav #sns li{
+	#mainnav #sns li {
 		display: inline-block;
 	}
-	#mainnav #sns li a{
+	#mainnav #sns li a {
 		position: relative;
 		display: inline-block;
-		padding: 15px 10px 0;
+		padding: 15px 20px;
 		border: 0;
 	}
-	#mainnav #sns li a:before{
+	#mainnav #sns li a:before {
 		border: 0;
 	}
-	.col4 li{
+	.col4 li {
 		margin: 0 auto 50px;
 		display: block;
 		text-align: center;
 	}
-	section h2{
+	section h2 {
 		margin: 55px auto;
 	}
 }
